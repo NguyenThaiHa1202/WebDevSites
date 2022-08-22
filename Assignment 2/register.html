@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>Registration</title>
+<meta name="description" content="Web development"/>
+<meta name="keyword" 	 content="HTML form element"/>
+<meta name="author"		 content="Nguyen Thai Ha"/>
+<meta name="StudentID"	 content="103430053"/>
+<link  rel="stylesheet" href="css/style.css">
+<script src="js/script1.js"></script> 
+
+<body>
+    <header>
+        <div class="title-image">
+            <a href="#"><img src="images/brunologo.png" alt="image"></a>
+        </div>
+    </header>
+    
+    <nav id="navbar">
+        <a href="index.html" class="links">Index</a>
+        <a href="register.html" class="links">Register</a>      
+        <div class="nav-right">
+            <a href="order.html" class="links">Order</a>
+            <a href="feature.html" class="links">Features</a>
+        </div>
+    </nav>
+    
+    <main>
+        <section>
+            <article>
+                <div class="row">
+                    <div class="main1">
+                        <div class="bigbox">
+                            <h1>Registering an Account</h1>
+                            <p>Please fill in the form to register with us!</p>
+                            <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+                                <fieldset id="loginInfo">
+                                    <legend>Login Information </legend>
+                                    <label for="email">Email</label>
+                                    <br/>
+                                    <input id="email" class="fill" type="email" name="email">
+                                    <br/>
+                                    <label for="pass1">Password</label>
+                                    <br/>
+                                    <input id="pass1" class="fill" type="password" name="pass1">
+                                    <br/>
+                                    <label for="pass2">Confirm password</label>
+                                    <br/>
+                                    <input id="pass2" class="fill" type="password" name="pass2">
+                                </fieldset>
+
+                                <fieldset id="accInfo">
+                                    <legend>Account information</legend>
+                                    <label for="number">Phone</label>
+                                    <br/>
+                                    <input id="number" class="fill" type="tel" name="phone-number">
+                                    <br/>
+                                    <label for="fname">First name</label>
+                                    <br/>
+                                    <input id="fname" class="fill" type="text" name="fName">
+                                    <br/>
+                                    <label for="lname">Last name</label>
+                                    <br/>
+                                    <input id="lname" class="fill" type="text" name="lname">
+                                    <br/>
+                                    
+                                    <label>Gender</label>
+                                    <br/>
+                                    <input id="genm" type="radio" name="gender" value="M" />
+                                    <label for="genm">Male</label>
+                                    <input id="genf" type="radio" name="gender" value="F"/>
+                                    <label for="genf">Female</label>
+                                    <input id="geno" type="radio" name="gender" value="O"/>
+                                    <label for="geno">Other</label>
+                                    <br/>
+                                    <label for="dob">Date of birth</label>
+                                    <br/>
+                                    <input id="dob" type="date" name="DoB">
+                                    <br/>
+                                    
+                                    <label>Your favourites</label>
+                                    <br/>
+                                    <input id="sea" type="checkbox" name="seafood" value="seafood" />Seafood Pizza
+                                    <br/>
+                                    <input id="pine" type="checkbox" name="hawaiian" value="hawaiian" />Tropical Pizza
+                                    <br/>
+                                    <input id="meat" type="checkbox" name="meatlover" value="meatlover" />Meat Lovers Pizza
+                                    <br/>
+                                    <input id="ckn" type="checkbox" name="chicken" value="chicken" />Teriyaki Pizza
+                                    <br/>
+                                    
+                                    <label>How often do you go to a restaurant ? </label>
+                                    <br/>
+                                    <select id="freq" name="frequency">
+                                        <option value="3">Less than twice a week</option>
+                                        <option value="2">3-5 times a week</option>
+                                        <option value="1">More than 5 times a week</option>
+                                    </select>
+                                </fieldset>
+                                <input class="button" type="reset" value="Reset Answers" id="reset">
+                                <br>
+                                <input class="button" type="submit" value="Create Account" id="register">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="side1">
+                        <h3>About Page</h3>
+                        <p>This website was created and maintained with HTML/CSS and with the support of W3school Validation Tools!</p>
+                        <hr/>
+                        <h3>Our Location:</h3>
+                        <p>Number 2, Duong Khue Street, Cau Giay Province, Hanoi</p>
+                        <hr/>
+                        <h3>Contact Us!</h3>
+                        <p>Email: brunopizza@gmail.com <br> Num: 1800-BRUNOS</p>
+                        <hr/>
+                        <h3>Social Media</h3>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/">Facebook</a><br>
+                            <a href="https://twitter.com/">Twitter</a><br>
+                            <a href="https://www.youtube.com/">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h4>Presented by Bruno's Pizza&#169; 1885-2021</h4>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

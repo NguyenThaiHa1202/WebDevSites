@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/arno-landscape-leonardo-da-vinci.jpg");
+}
+
+/* Header Title Bar */
+.title-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pexels-pixabay-301378.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.title-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    overflow: hidden;
+}
+/* Header Title Bar */
+
+/* Navbar */
+nav {
+    overflow: hidden;
+    background-color: #090909;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+nav a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin: 5px 5px 0px 5px;
+}
+
+.nav-right {
+    float:right;
+}
+/* Navbar */
+
+/* Splashbox and caption */
+* {
+    box-sizing: border-box;
+}
+  
+.splash {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/pizza1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+  
+.text {
+    color: #dad3d3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    top: 30%;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+/* Splashbox and caption*/
+
+/* Page Split*/
+* {
+    box-sizing: border-box;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.side1 {
+    flex: 20%; 
+    background-color: #f1f1f1; 
+    padding: 20px; 
+    font-family: sans-serif;
+}
+  
+.main1 {
+    flex: 80%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/altbg.jpg"); 
+    padding: 20px; 
+    font-family: sans-serif;
+    color: white;
+}
+/* Page Split/
+  
+/* History Table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+table img {
+    width: 100%;
+}
+    
+table p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+}
+
+table h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+td {
+    text-align: left;
+    padding: 16px;
+    width: 25%;
+}
+/* History Table */
+
+/* Formatting Sidebar */
+.social-media a {
+    background:black;
+    padding:20px;
+    color:white;
+    display: block;
+    text-decoration: none; 
+}
+/* Formatting Sidebar */
+
+/* Formatting Sliding Menu */
+.snazzy {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #111;
+    padding: 4px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: white;  
+    font-family: sans-serif;
+}
+  
+.slidecontainer {
+    float: left;
+    position: relative;
+    width: 25%;
+    margin-bottom: 16px;
+}
+  
+@media screen and (max-width: 700px) {
+    .slidecontainer {
+        width: 100%;
+        display: block;
+    }
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+#overlay2 {
+    background-color: #008CBA;
+}
+ 
+#overlay2 {
+    background-color: #8fc943;
+}
+
+#overlay3 {
+    background-color: #af2f25;
+}
+
+#overlay4 {
+    background-color: #e7dc3e;
+}
+
+.slidecontainer:hover .overlay {
+    height: 100%;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Sliding Menu */
+
+.button {
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+  }
+
+/* Footer Formatting */
+footer {
+    padding: 20px;
+    text-align: center;
+    bottom: 40px;
+    background: #000000;
+    color: white;
+    font-family: sans-serif;
+}
+
+footer img{
+    border:0;
+    width:88px;
+    height:31px;
+}
+/* Footer Formatting */

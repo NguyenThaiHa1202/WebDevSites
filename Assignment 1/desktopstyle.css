@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Header section */
+header {
+  padding: 80px; 
+  text-align: center; 
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("headerpic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 40px;
+}
+/* End of Header section */
+
+/* Drop-down Nav section */
+.dropbutton {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #111;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color:white;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 0px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block; width: 100%; }
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* End of Drop-down Nav section */
+
+/* About the Author Image-textbox section */
+.container {
+  position: relative;
+}
+
+.img {
+  padding: 200px; 
+  text-align: center; 
+  color: white; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("myface.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+/* End of About the Author Image-textbox section */
+
+/* Two lane split */
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 20%; 
+  background-color: #f1f1f1; 
+  padding: 20px; 
+}
+
+.main {
+  flex: 80%; 
+  background-color: white; 
+  padding: 20px; 
+}
+/* End of Two lane split */
+
+/* Formatting Page-Card content */
+.cardcolumn {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .cardcolumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardcontainer {
+  padding: 0 16px;
+}
+
+.crop {
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.crop img {
+  width: 400px;
+  height: 300px;
+}
+
+.cardcontainer::after, .cardrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+/* End of Formatting Page-Card content */
+
+/* Formatting Sidebar area */
+.social-media a {
+  background:black;
+  padding:20px;
+  color:white;
+  display: block;  
+}
+/* End of Formatting Sidebar area */
+
+/* Formatting Sliding Text */
+.snazzy {
+  display: block;
+  width: 99.9%;
+  border: none;
+  background-color: #111;
+  padding: 4px 0px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;  
+}
+
+.slidecontainer {
+  float: left;
+  position: relative;
+  width: 33.3%;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .slidecontainer {
+    width: 100%;
+    display: block;
+  }
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.slidecontainer:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* End of Sliding Text Formatting */
+
+/* Table Formatting */
+#center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#center2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* End of Table Formatting */
+
+/* Footer Formatting */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #000000;
+  color: white;
+}
+/* End of Footer Formatting */

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>Ordering</title>
+<meta name="description" content="Web development"/>
+<meta name="keyword" 	 content="HTML form element"/>
+<meta name="author"		 content="Nguyen Thai Ha"/>
+<meta name="StudentID"	 content="103430053"/>
+<link  rel="stylesheet" href="css/style.css">
+<script src="js/script2.js"></script> 
+
+<body>
+    <header>
+        <div class="title-image">
+            <a href="#"><img src="images/brunologo.png" alt="image"></a>
+        </div>
+    </header>
+    
+    <nav id="navbar">
+        <a href="index.html" class="links">Index</a>
+        <a href="register.html" class="links">Register</a>      
+        <div class="nav-right">
+            <a href="order.html" class="links">Order</a>
+            <a href="feature.html" class="links">Features</a>
+        </div>
+    </nav>
+    
+    <main>
+        <section>
+            <article>
+                <div class="row">
+                    <div class="main1">
+                        <div>
+                            <h1>Place your order:</h1>
+                            <form id="order" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+                                <fieldset>
+                                    <legend>Pizza Reception method:</legend>
+                                    <br/>
+                                    <input id="deli" type="radio" name="method" value="delivery"/>Delivery
+                                    <input id="pickup" type="radio" name="method" value="pickup"/>Pick up
+                                    <label id="addq" ><br/>Deliver address:<br/></label> 
+                                    <input id="dadd" class="fill1" type="text" name="dadd"/>
+                                    <br/>
+                                    
+                                    <label>Billing address:<br/></label> 
+                                    <input id="badd" class="fill1" type="text" name="badd"/>
+                                    <button id="same" type="button">Same as deliver address</button>
+                                    <br/>
+                                    
+                                    <label>Postcode:<br/></label> 
+                                    <input id="pcode" class="fill1" type="text" name="code" maxlength="4"/>
+                                    <br/>
+                                    <input id="receipt" type="checkbox" name="receipt" value="yes"/>Email for receipt
+                                    <br/>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Payment method</legend>
+                                    <br/>
+                                    <input id="cash" type="radio" name="payment" value="pickup"/>Cash
+                                    <input id="credit" type="radio" name="payment" value="online"/>Card<br/>
+                                    <div id="card_popup">
+                                    <br/>
+                                    <label class="cardtype">Credit card info:</label>
+                                    <br/>
+                                    <input id="visa" type="radio" name="card" value="visa"/>
+                                    <label class="cardtype">Visa</label>
+                                    <br/>
+                                    <input id="master" type="radio" name="card" value="mastercard"/>
+                                    <label class="cardtype">MasterCard</label>
+                                    <br/>
+                                    <input id="aexpress" type="radio" name="card" value="americanexpress" />
+                                    <label class="cardtype">American Express</label>
+                                    <br/>
+                                    <input id="vsnum" class="fill1" type="text" name="visa_num" maxlength="16"/>
+                                    <input id="mtnum" class="fill1" type="text" name="mastercard_num" maxlength="16"/>
+                                    <input id="aenum" class="fill1" type="text" name="americanexpress_num" maxlength="15"/>
+                                    </div>
+                                </fieldset>
+                                    <input class="button" type="reset" value="Reset Fields" id="reset">
+                                    <br>
+                                    <input class="button" type="submit" value="Order Now" id="register">
+                              </form>
+                        </div>
+                    </div>
+                    <div class="side1">
+                        <h3>About Page</h3>
+                        <p>This website was created and maintained with HTML/CSS and with the support of W3school Validation Tools!</p>
+                        <hr/>
+                        <h3>Our Location:</h3>
+                        <p>Number 2, Duong Khue Street, Cau Giay Province, Hanoi</p>
+                        <hr/>
+                        <h3>Contact Us!</h3>
+                        <p>Email: brunopizza@gmail.com <br> Num: 1800-BRUNOS</p>
+                        <hr/>
+                        <h3>Social Media</h3>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/">Facebook</a><br>
+                            <a href="https://twitter.com/">Twitter</a><br>
+                            <a href="https://www.youtube.com/">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <h4>Presented by Bruno's Pizza&#169; 1885-2021</h4>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
